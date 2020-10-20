@@ -4,11 +4,11 @@ services:
   cambium-report:
     image: jbraconig/cambium-reports
     volumes:
-      - /home/mbraconi/reports:/data
+      - /reports:/data
     environment:
-      CAMBIUM_HOST: "192.168.1.101"
-      CAMBIUM_CLIENT_ID: "gCaENRfbs6RBbnOG"
-      CAMBIUM_SECRET: "tm5cQcG5CF9IHfi6blhYTQxlhmj2eX"
+      CAMBIUM_HOST: "127.0.0.1"
+      CAMBIUM_CLIENT_ID: ""
+      CAMBIUM_SECRET: ""
       #C_DATA_COLUMNS: ""
       CAMBIUM_TIME_SECONDS: "300"
     logging:
