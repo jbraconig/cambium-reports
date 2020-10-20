@@ -1,0 +1,22 @@
+version: '3.2'
+
+services:
+  cambium-report:
+    image: jbraconig/cambium-reports
+    volumes:
+      - /home/mbraconi/reports:/data
+    environment:
+      CAMBIUM_HOST: "192.168.1.101"
+      CAMBIUM_CLIENT_ID: "gCaENRfbs6RBbnOG"
+      CAMBIUM_SECRET: "tm5cQcG5CF9IHfi6blhYTQxlhmj2eX"
+      #C_DATA_COLUMNS: ""
+      CAMBIUM_TIME_SECONDS: "300"
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+
