@@ -9,7 +9,7 @@ services:
       CAMBIUM_HOST: "127.0.0.1"
       CAMBIUM_CLIENT_ID: ""
       CAMBIUM_SECRET: ""
-      #C_DATA_COLUMNS: ""
+      #CAMBIUM_DATA_COLUMNS: ""
       CAMBIUM_TIME_SECONDS: "300"
     logging:
       driver: json-file
