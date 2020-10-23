@@ -1,9 +1,5 @@
 version: '3.2'
 
-networks:
-  base:
-    external: true
-
 services:
   cambium-report:
     image: jbraconig/cambium-reports
@@ -15,8 +11,6 @@ services:
       CAMBIUM_SECRET: ""
       #CAMBIUM_DATA_COLUMNS: ""
       CAMBIUM_TIME_SECONDS: "300"
-    networks: 
-      - base
     logging:
       driver: json-file
       options:
