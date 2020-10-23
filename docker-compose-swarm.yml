@@ -1,5 +1,9 @@
 version: '3.2'
 
+networks:
+  base:
+    external: true
+
 services:
   cambium-report:
     image: jbraconig/cambium-reports
