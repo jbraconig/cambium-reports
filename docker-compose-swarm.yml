@@ -15,7 +15,8 @@ services:
       CAMBIUM_SECRET: ""
       #CAMBIUM_DATA_COLUMNS: ""
       CAMBIUM_TIME_SECONDS: "300"
-    networks: base
+    networks: 
+      - base
     logging:
       driver: json-file
       options:
