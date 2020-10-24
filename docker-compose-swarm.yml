@@ -4,7 +4,7 @@ services:
   cambium-report:
     image: cambium-reports
     volumes:
-      - /reports:/data
+      - /home/cambium/reports:/data
     environment:
       CAMBIUM_HOST: "cnmaestro"
       CAMBIUM_CLIENT_ID: ""
