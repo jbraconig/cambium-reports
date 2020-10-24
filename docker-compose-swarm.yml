@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   cambium-report:
-    image: cambium-reports
+    image: jbraconig/cambium-reports
     volumes:
       - /home/cambium/reports:/data
     environment:
