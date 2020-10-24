@@ -1,16 +1,18 @@
-version: '3.2'
+version: '3.8'
 
 services:
   cambium-report:
-    image: jbraconig/cambium-reports
+    image: cambium-reports
     volumes:
       - /reports:/data
     environment:
-      CAMBIUM_HOST: "127.0.0.1"
+      CAMBIUM_HOST: "cnmaestro"
       CAMBIUM_CLIENT_ID: ""
       CAMBIUM_SECRET: ""
       #CAMBIUM_DATA_COLUMNS: ""
       CAMBIUM_TIME_SECONDS: "300"
+    extra_hosts:
+      - "cnmaestro:127.0.0.1"
     logging:
       driver: json-file
       options:
@@ -19,4 +21,5 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
+
 
