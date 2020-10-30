@@ -4,7 +4,7 @@ services:
   cambium-report:
     image: jbraconig/cambium-reports
     volumes:
-      - /home/cambium/data:/usr/src/app/data
+      - /home/cambium/reports:/usr/src/app/data
       - /home/cambium/logs:/usr/src/app/logs
     environment:
       CAMBIUM_HOST: "cnmaestro"
