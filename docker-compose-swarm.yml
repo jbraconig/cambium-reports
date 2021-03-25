@@ -10,7 +10,7 @@ services:
       CAMBIUM_HOST: "cnmaestro"
       CAMBIUM_CLIENT_ID: ""
       CAMBIUM_CLIENT_SECRET: ""
-      #CAMBIUM_DATA_COLUMNS: ""
+      #CAMBIUM_DATA: ""
       CAMBIUM_INTERVAL: "300"
     extra_hosts:
       - "cnmaestro:127.0.0.1"
